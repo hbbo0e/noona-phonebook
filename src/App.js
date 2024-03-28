@@ -1,5 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
+import { Container, Row, Col, Form, Button } from 'react-bootstrap';
+import ContactForm from './component/ContactForm';
+import ContactList from './component/ContactList';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 /** 
  * 1. 왼쪽에는 연락처 등록하는 폼이, 오른쪽에는 연락처 리스트와 search 창이 있다.
@@ -11,10 +15,15 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-
+      <h1 className="title"> Phone Book </h1>
+      <Container>
+        <Row>
+          <Col> <ContactForm /> </Col>
+          <Col> <ContactList /> </Col>
+        </Row>
+      </Container>
     </div>
   );
 }
 
 export default App;
- 
