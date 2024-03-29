@@ -5,10 +5,10 @@ import { Row, Col, Form, Button } from 'react-bootstrap';
 const SearchBox = () => {
   return (
     <Row>
-        <Col lg={10}>
+        <Col>
             <Form.Control type="text" placeholder="Search Name" />
         </Col>
-        <Col lg={2}>
+        <Col>
             <Button> Search </Button>
         </Col>
     </Row>
